@@ -11,4 +11,3 @@ theme:
   name: material
 plugins:
   - search
-  - 3d-model-viewer

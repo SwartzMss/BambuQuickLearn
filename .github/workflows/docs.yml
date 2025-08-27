@@ -18,11 +18,11 @@ jobs:
           python-version: '3.x'
       - name: Install MkDocs
         run: |
-          pip install mkdocs mkdocs-material mkdocs-3d-model-viewer
+          pip install mkdocs mkdocs-material
       - name: Build
         run: mkdocs build --strict
       - name: Deploy
         if: github.event_name == 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force --remote-branch gh-pages
