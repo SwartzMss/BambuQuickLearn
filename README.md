@@ -8,5 +8,3 @@
 - `mkdocs.yml` – 文档站点的配置文件。
 - `requirements.txt` – 构建站点所需的 Python 依赖。
 
-请先将你的笔记添加到 `docs/`，并把模型文件放到 `models/` 下对应分类。
-
