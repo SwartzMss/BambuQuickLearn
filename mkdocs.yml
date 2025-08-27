@@ -1,0 +1,14 @@
+site_name: Bambu 快速学习
+nav:
+  - 首页: index.md
+  - 材料: materials/index.md
+  - 打印机: printers/index.md
+  - 切片软件: slicers/index.md
+  - 设计: design/index.md
+  - 故障排除: troubleshooting/index.md
+  - 成品展示: showcase/index.md
+theme:
+  name: material
+plugins:
+  - search
+  - 3d-model-viewer
