@@ -1,4 +1,7 @@
-site_name: Bambu 快速学习
+site_name: BambuQuickLearn
+site_url: https://SwartzMss.github.io/BambuQuickLearn/
+site_description: Bambu 学习笔记
+
 nav:
   - 首页: index.md
   - 材料: materials/index.md
