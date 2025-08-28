@@ -8,6 +8,7 @@ nav:
   - 打印机: printers/index.md
   - 打印技术: technologies/index.md
   - 切片软件: slicers/index.md
+  - 文件与流程: workflow/index.md
   - 设计: design/index.md
   - 故障排除: troubleshooting/index.md
   - 成品展示: showcase/index.md
