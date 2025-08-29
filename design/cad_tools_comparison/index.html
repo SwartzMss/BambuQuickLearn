@@ -1,0 +1,694 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bambu 学习笔记">
+      
+      
+      
+        <link rel="canonical" href="https://SwartzMss.github.io/BambuQuickLearn/design/cad_tools_comparison/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Tinkercad vs. Fusion 360 vs. Shapr3D：跨平台 CAD 工具比较 - BambuQuickLearn</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tinkercad-vs-fusion-360-vs-shapr3d-cad" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BambuQuickLearn" class="md-header__button md-logo" aria-label="BambuQuickLearn" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BambuQuickLearn
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tinkercad vs. Fusion 360 vs. Shapr3D：跨平台 CAD 工具比较
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BambuQuickLearn" class="md-nav__button md-logo" aria-label="BambuQuickLearn" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BambuQuickLearn
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../materials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    材料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../printers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    打印机
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    打印技术
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slicers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    切片软件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文件与流程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    故障排除
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../showcase/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    成品展示
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 软件定位与目标用户
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 平台支持
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 用户界面与操作方式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 功能与特性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 学习曲线与教程资源
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 成本与授权
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 场景适配建议
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tinkercad-vs-fusion-360-vs-shapr3d-cad">Tinkercad vs. Fusion 360 vs. Shapr3D：跨平台 CAD 工具比较</h1>
+<hr />
+<h2 id="1">1. 软件定位与目标用户</h2>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>定位与应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tinkercad</strong></td>
+<td>在线、轻量化 3D 设计工具，面向初学者和教育用户，适合入门和简单模型制作。</td>
+</tr>
+<tr>
+<td><strong>Fusion 360</strong></td>
+<td>面向产品设计、工程设计与制造的专业 CAD/CAM/CAE 软件，适用范围广。</td>
+</tr>
+<tr>
+<td><strong>Shapr3D</strong></td>
+<td>强调移动设备上的 CAD 设计体验，偏向工业设计、概念建模和机械结构。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2">2. 平台支持</h2>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>支持平台</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tinkercad</strong></td>
+<td>网页端（云端运行），也有 iPad App。</td>
+</tr>
+<tr>
+<td><strong>Fusion 360</strong></td>
+<td>Windows、macOS（桌面端）。</td>
+</tr>
+<tr>
+<td><strong>Shapr3D</strong></td>
+<td>iPad、Mac、Windows（Apple Pencil 体验最佳）。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">3. 用户界面与操作方式</h2>
+<ul>
+<li><strong>Tinkercad</strong>：基于浏览器的可视化界面，操作直观、拖拽式建模，适合零基础用户和课堂教学。</li>
+<li><strong>Fusion 360</strong>：传统 CAD/CAID 操作模式，界面较复杂，需要一定学习曲线；多功能面板和命令行工具。</li>
+<li><strong>Shapr3D</strong>：触控/Apple Pencil 操作友好，界面简洁；支持类似桌面 CAD 的参数化设计，但交互强调直观性。</li>
+</ul>
+<hr />
+<h2 id="4">4. 功能与特性</h2>
+<table>
+<thead>
+<tr>
+<th>功能领域</th>
+<th>Tinkercad</th>
+<th>Fusion 360</th>
+<th>Shapr3D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>建模方式</strong></td>
+<td>基础布尔运算、简单形状拼接</td>
+<td>参数化建模、自由曲面、动态组件、拼装</td>
+<td>直接建模（Direct Modeling）、参数化</td>
+</tr>
+<tr>
+<td><strong>模拟/分析</strong></td>
+<td>无</td>
+<td>仿真、有限元分析、运动分析等</td>
+<td>无内置仿真分析（需导出到其他软件）</td>
+</tr>
+<tr>
+<td><strong>渲染与可视化</strong></td>
+<td>简单预览</td>
+<td>内置渲染和动画工具</td>
+<td>基础渲染功能，可导出模型后进行高品质渲染</td>
+</tr>
+<tr>
+<td><strong>协作与云功能</strong></td>
+<td>在线保存和分享</td>
+<td>云端存储、版本管理、协作、设计团队共享</td>
+<td>iCloud/账户同步、导出至各种格式</td>
+</tr>
+<tr>
+<td><strong>扩展与插件</strong></td>
+<td>无插件支持</td>
+<td>支持扩展、插件、脚本（Python、API）</td>
+<td>限制较多，主要依赖官方功能</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. 学习曲线与教程资源</h2>
+<ul>
+<li><strong>Tinkercad</strong>：包含大量入门教程、案例项目；适合 K12 教育和自学。</li>
+<li><strong>Fusion 360</strong>：官方学习中心、YouTube 教程、行业课程丰富，但内容较深入，花费时间多。</li>
+<li><strong>Shapr3D</strong>：官方教学视频较丰富，界面较直观，但高级功能使用需要一定的 CAD 基础。</li>
+</ul>
+<hr />
+<h2 id="6">6. 成本与授权</h2>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>价格与许可证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tinkercad</strong></td>
+<td>免费。</td>
+</tr>
+<tr>
+<td><strong>Fusion 360</strong></td>
+<td>个人使用免费；商业版订阅制（约 USD $70/月 或 $495/年）；教育版免费。</td>
+</tr>
+<tr>
+<td><strong>Shapr3D</strong></td>
+<td>基础功能免费；Pro 订阅约 USD $25/月（个人）或 $42/月（团队）等。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7">7. 场景适配建议</h2>
+<ul>
+<li><strong>Tinkercad</strong>：教育、快速概念演示、3D 打印初步模型。</li>
+<li><strong>Fusion 360</strong>：工程设计、机械零件、产品开发、协同设计与制造。</li>
+<li><strong>Shapr3D</strong>：移动端快速建模、外出调研、设计草图深化、工业设计师初期建模。</li>
+</ul>
+<hr />
+<p><strong>结论</strong></p>
+<ul>
+<li>若你是初学者，想简单上手 3D 设计：<strong>Tinkercad</strong> 最易入门。</li>
+<li>若你需要完整的工程设计、制造、分析工具链：<strong>Fusion 360</strong> 功能最全面。</li>
+<li>若你注重移动端流畅体验、快速建模和手写绘图感：<strong>Shapr3D</strong> 是最佳选择。</li>
+</ul>
+<p>选择哪款软件，取决于你的设计场景、技能水平和预算。希望这份比较能帮助你快速找到最适合自己的 CAD 工具！</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
